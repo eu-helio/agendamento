@@ -58,9 +58,8 @@ const SERVICOS = [
 ];
 /* Profissionais: [nome, especialidade] */
 const PROFISSIONAIS = [
-  ["Anna Marques", "Designer de Sobrancelhas"],
-  ["Juliana Souza", "Extensão de Cílios"],
-  ["Camila Ferreira", "Unhas em Gel"],
+  ["Anna Marques", "Designer de Sobrancelhas, Extensão de Cílios, Maquiagem profissional, designer de sobrancelhas"],
+  ["Markira Albuquerque", "Unhas em Gel, manicure e pedicure, Spa dos pés, designer de sobrancelhas"],
 ];
 /* Depoimentos: [nome da cliente, texto] */
 const DEPOIMENTOS = [
