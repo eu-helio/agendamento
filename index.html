@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Studio Bellezza – Beleza em cada detalhe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Montserrat:wght@300;400;500;600&family=Dancing+Script:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ===== ÍCONES REUTILIZÁVEIS (sprite SVG) ===== -->
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <defs>
+        <symbol id="lotus" viewBox="0 0 64 56">
+          <g
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linejoin="round"
+            stroke-linecap="round"
+          >
+            <path d="M32 6c7 8 9 18 0 30-9-12-7-22 0-30z" />
+            <path
+              d="M32 36C24 32 14 22 12 12c10 1 18 8 20 24zM32 36c8-4 18-14 20-24-10 1-18 8-20 24z"
+            />
+            <path
+              d="M32 40C20 40 8 34 3 24c10-2 20 2 29 16zM32 40c12 0 24-6 29-16-10-2-20 2-29 16z"
+            />
+          </g>
+        </symbol>
+        <symbol id="cal" viewBox="0 0 24 24">
+          <rect x="3.5" y="5" width="17" height="15.5" rx="3" />
+          <path d="M8 3v4M16 3v4M3.5 10h17M8 14h.01M12 14h.01M16 14h.01M8 17.5h.01M12 17.5h.01" />
+        </symbol>
+        <symbol id="arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" /></symbol>
+      </defs>
+    </svg>
+
+    <!-- ===== CABEÇALHO (menu fixo) ===== -->
+    <header>
+      <div class="w nav">
+        <a class="logo" href="#inicio" aria-label="Studio Bellezza"
+          ><svg><use href="#lotus" /></svg
+          ><span
+            ><small>STUDIO</small><b>Bellezza</b><i>BELEZA · AUTOESTIMA · BEM-ESTAR</i></span
+          ></a
+        >
+        <nav aria-label="Principal">
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#profissionais">Profissionais</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+        <button class="btn" data-open>
+          <svg><use href="#cal" /></svg>Agendar Horário
+        </button>
+      </div>
+    </header>
+
+    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+    <main>
+      <!-- ===== SEÇÃO 1 – DESTAQUE (hero) ===== -->
+      <div class="hero" id="inicio">
+        <div class="w hg">
+          <div>
+            <div class="eyebrow">CUIDADO EM CADA DETALHE</div>
+            <h1>Realce o que há <em>de mais bonito em você</em></h1>
+            <p class="sub">
+              Beleza, autoestima e bem-estar em um só lugar. Cuide de você com quem entende.
+            </p>
+            <button class="btn" data-open>
+              <svg><use href="#cal" /></svg>Agendar Horário<svg><use href="#arr" /></svg>
+            </button>
+            <div class="prf">
+              <div class="av"><span>M</span><span>B</span><span>C</span><span>J</span></div>
+              +5.000 clientes satisfeitas
+            </div>
+          </div>
+          <div class="portrait" role="img" aria-label="Espaço para foto de destaque">
+            <svg viewBox="0 0 64 56"><use href="#lotus" /></svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== SEÇÃO 2 – FAIXA DE SERVIÇOS (preenchida pelo script.js) ===== -->
+      <div class="w" id="servicos"><div class="strip" id="strip"></div></div>
+
+      <!-- ===== SEÇÃO 3 – EQUIPE ===== -->
+      <section id="profissionais">
+        <div class="w tg">
+          <div>
+            <div class="eyebrow">NOSSO STUDIO</div>
+            <h2>Especialistas em cuidar de você</h2>
+            <p class="t">
+              Contamos com uma equipe de profissionais qualificadas, prontas para realçar sua beleza
+              com um atendimento personalizado e acolhedor.
+            </p>
+            <a class="btn o" href="#profissionais"
+              >Conheça nosso time<svg><use href="#arr" /></svg></a
+            ><br />
+            <span class="script">Sua beleza, nossa prioridade ♡</span>
+          </div>
+          <div class="tcs" id="team"></div>
+        </div>
+      </section>
+
+      <!-- ===== SEÇÃO 4 – CHAMADA PARA AGENDAR ===== -->
+      <div class="w">
+        <div class="cta">
+          <svg class="ic"><use href="#cal" /></svg>
+          <div>
+            <h2>Agende agora seu horário</h2>
+            <p>Reserve seu momento de beleza e bem-estar.</p>
+          </div>
+          <button class="btn" data-open>
+            <svg><use href="#cal" /></svg>Agendar Horário<svg><use href="#arr" /></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- ===== SEÇÃO 5 – DEPOIMENTOS ===== -->
+      <section id="depoimentos" class="tt">
+        <div class="w">
+          <div class="eyebrow">DEPOIMENTOS</div>
+          <h2>O que nossas clientes dizem</h2>
+          <div class="car">
+            <button class="ar" id="pv" aria-label="Anterior">
+              <svg class="ic"><path d="M15 5l-7 7 7 7" /></svg>
+            </button>
+            <div class="trk" id="trk"></div>
+            <button class="ar" id="nx" aria-label="Próximo">
+              <svg class="ic"><path d="M9 5l7 7-7 7" /></svg>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== RODAPÉ ===== -->
+    <footer id="contato">
+      <div class="w">
+        <div class="fg">
+          <a class="logo" href="#inicio"
+            ><svg><use href="#lotus" /></svg
+            ><span
+              ><small>STUDIO</small><b>Bellezza</b><i>BELEZA · AUTOESTIMA · BEM-ESTAR</i></span
+            ></a
+          >
+          <div>
+            <h3>Entre em contato</h3>
+            <ul>
+              <li>(84) 99205-0632</li>
+              <li>@studiobellezza</li>
+              <li>Extremoz – RN</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Links rápidos</h3>
+            <ul>
+              <li><a href="#inicio">Início</a></li>
+              <li><a href="#servicos">Serviços</a></li>
+              <li><a href="#profissionais">Profissionais</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Siga-nos</h3>
+            <div class="soc">
+              <a href="#" aria-label="Instagram"
+                ><svg class="ic">
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M17.5 6.5h.01" /></svg></a
+              ><a href="#" aria-label="WhatsApp"
+                ><svg class="ic">
+                  <path d="M3 21l1.6-4.8A8.5 8.5 0 1 1 8 19.5L3 21z" />
+                  <path d="M9 9c0 3 3 6 6 6l1-1.5-2-1-1 .8c-1-.4-2-1.4-2.4-2.4l.8-1-1-2z" /></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="cp">
+          <span>© 2026 Studio Bellezza. Todos os direitos reservados.</span
+          ><span>Beleza que transforma. ♡</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== JANELA DE AGENDAMENTO (abre ao clicar em "Agendar Horário") ===== -->
+    <div id="md" role="dialog" aria-modal="true" aria-labelledby="mt">
+      <div class="sheet">
+        <div class="mh">
+          <div>
+            <h2 id="mt">Agendar horário</h2>
+            <small id="ms"></small>
+          </div>
+          <button class="x" id="cl" aria-label="Fechar">
+            <svg class="ic"><path d="M6 6l12 12M18 6L6 18" /></svg>
+          </button>
+        </div>
+        <div class="bar" id="bar"></div>
+        <div id="bk"></div>
+        <div class="mf" id="mf">
+          <button class="btn o" id="bb">Voltar</button
+          ><button class="btn" id="bn">Continuar</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
